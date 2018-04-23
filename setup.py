@@ -16,7 +16,7 @@ setup(
     classifiers = [
         'Intended Audience :: Developers',
         'Programming Language :: Python :: 3',
-        'License :: MIT License',
+        'License :: MIT',
         'Topic :: Utilities',
         'Development Status :: 3 - Alpha'
     ],
