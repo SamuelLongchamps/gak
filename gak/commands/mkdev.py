@@ -5,9 +5,9 @@ from gak.utils import retrieve_user_config
 class MkdevGakCommand(GakCommand):
     def init_parser(self, subparsers):
         mkdev_parser = subparsers.add_parser("mkdev", aliases=["md"],
-                                             help="Rename the current branch into a dev_branch")
+                                             help="Rename the current branch with a dev prefix")
         mkdev_parser.add_argument("-t", "--toggle", action="store_true",
-                                  help="Toggle between dev_branches and not dev_branches prefix")
+                                  help="Toggle between the dev prefix")
         mkdev_parser.set_defaults(func=self.command)
 
     def command(self, args, root):

@@ -43,7 +43,7 @@ positional arguments:
                         Action to take
     build (p)           Build stuff
     list (ls)           List configurations defined for this project
-    mkdev (md)          Rename the current branch into a dev_branch
+    mkdev (md)          Rename the current branch with a dev prefix
     open (o)            Open stuff
     to                  Go to places in the repo
 
