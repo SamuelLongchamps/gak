@@ -12,7 +12,7 @@ class MkdevGakCommand(GakCommand):
 
     def command(self, args, root):
         user_config = retrieve_user_config()
-        prefix = user_config.get("prefix")
+        prefix = user_config.get("mkdev", {}).get("prefix")
         if not prefix:
             print("[WARNING] No dev prefix defined, default to 'dev'")
             prefix = "dev"
