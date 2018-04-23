@@ -1,0 +1,4 @@
+#!/usr/bin/env python3
+from gak.__main__ import main
+
+main()

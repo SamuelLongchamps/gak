@@ -1,0 +1,3 @@
+{
+  "configure": ["echo 'Configuring step 1...'", "echo 'Configuring step 2...'"]
+}
