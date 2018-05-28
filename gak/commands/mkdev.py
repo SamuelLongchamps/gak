@@ -1,3 +1,5 @@
+import subprocess
+
 from gak.interface import GakCommand
 from gak.utils import retrieve_user_config
 
@@ -17,7 +19,6 @@ class MkdevGakCommand(GakCommand):
             print("[WARNING] No dev prefix defined, default to 'dev'")
             prefix = "dev"
 
-        import subprocess
         current_branch = subprocess.getoutput("git rev-parse --abbrev-ref HEAD")
         split_current_branch = current_branch.split("/")
         is_dev_branch = split_current_branch[0] == prefix
