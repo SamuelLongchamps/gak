@@ -36,7 +36,7 @@ This example is for a Windows user. For macOS, `file` could use `open` and GnuLi
 
 ## Usage
 ```
-usage: gak [-h] {build,p,list,ls,mkdev,md,open,o,to} ...
+usage: gak [-h] {build,b,list,ls,mkdev,md,open,o,to} ...
 
 positional arguments:
   {build,p,list,ls,mkdev,md,open,o,to}
