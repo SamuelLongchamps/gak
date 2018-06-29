@@ -41,7 +41,7 @@ usage: gak [-h] {build,p,list,ls,mkdev,md,open,o,to} ...
 positional arguments:
   {build,p,list,ls,mkdev,md,open,o,to}
                         Action to take
-    build (p)           Build stuff
+    build (b)           Build stuff
     list (ls)           List configurations defined for this project
     mkdev (md)          Rename the current branch with a dev prefix
     open (o)            Open stuff
