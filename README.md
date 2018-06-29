@@ -39,7 +39,7 @@ This example is for a Windows user. For macOS, `file` could use `open` and GnuLi
 usage: gak [-h] {build,b,list,ls,mkdev,md,open,o,to} ...
 
 positional arguments:
-  {build,p,list,ls,mkdev,md,open,o,to}
+  {build,b,list,ls,mkdev,md,open,o,to}
                         Action to take
     build (b)           Build stuff
     list (ls)           List configurations defined for this project
