@@ -1,4 +1,5 @@
 import os
+import sys
 
 from gak.interface import GakCommand
 from gak.utils import retrieve_config

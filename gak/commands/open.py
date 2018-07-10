@@ -37,7 +37,14 @@ class OpenGakCommand(GakCommand):
         what = config.get(args.what)
         if what is not None:
             runner = open_user_config.get(what[0])
-            target = os.path.join(root, what[1])
+
+            if " " in what[1]:
+                # Complex case, do a formatting of the root
+                target = what[1].format(root=root)
+            else:
+                # Simple case, just prepend the root
+                target = os.path.join(root, what[1])
+
             print("Opening {}".format(target))
             os.system(runner.format(target))
             return 0
