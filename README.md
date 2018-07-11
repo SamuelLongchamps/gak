@@ -6,6 +6,9 @@ Allows to simplify some tasks usually done for a Git project through the command
 The tool uses per-repo as well as user-specific configuration to interact with a local clone.
 
 ## Setup
+### Dependencies
+`pip install jira`
+
 ### Installing the tool
 (Currently development-only)
 
