@@ -11,7 +11,8 @@ class StartGakCommand(GakCommand):
     def init_parser(self, subparsers):
         start_parser = subparsers.add_parser("start", help="Start a task by creating a branch with an appropriate name")
         start_parser.add_argument("issue", nargs="?", help="Issue ID (XX-####) or JIRA URL to issue")
-        start_parser.add_argument("--from_here", help="Do not checkout to master and pull, checkout from the current branch")
+        start_parser.add_argument("-b", "--branch", default="master", help="Branch name from which to branch")
+        start_parser.add_argument("--from_here", action='store_true', help="Do not checkout to master and pull, checkout from the current branch")
         start_parser.set_defaults(func=self.command)
 
     def command(self, args, root):
@@ -24,7 +25,7 @@ class StartGakCommand(GakCommand):
             args.issue = args.issue.split("/")[-1]
 
         if not args.from_here:
-            completed = subprocess.run("git checkout master")
+            completed = subprocess.run("git checkout {}".format(args.branch))
             if completed.returncode != 0:
                 return 1
             completed = subprocess.run("git pull")
