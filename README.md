@@ -6,7 +6,7 @@ Allows to simplify some tasks usually done for a Git project through the command
 The tool uses per-repo as well as user-specific configuration to interact with a local clone.
 
 ## Setup
-### Dependencies
+### Dependencies (optional)
 `pip install jira`
 
 ### Installing the tool
@@ -17,7 +17,7 @@ The tool uses per-repo as well as user-specific configuration to interact with a
 
 The command-line tool is usable through the command `gak`.
 
-*Note that Windows' command-prompt is not supported: use git-bash.*
+*Note that some Linux distributions, ~/.local/bin is not included in the path by default. If the command is not found, verify that the gak script has been successfully copied to this directory and that it is on path.*
 
 ## Windows MingW setup
 If you use MingW (e.g., through git-bash), make sure to add `winpty` in front of the shebang of the script installed in your ${PythonInstall}/Scripts/gak. Here is a sample of the resulting script:
