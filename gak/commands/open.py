@@ -37,6 +37,9 @@ class OpenGakCommand(GakCommand):
         what = config.get(args.what)
         if what is not None:
             runner = open_user_config.get(what[0])
+            if runner is None:
+                sys.stderr.write(f"'{what[0]}' not defined as an 'open' command\n")
+                return 1
 
             if " " in what[1]:
                 # Complex case, do a formatting of the root

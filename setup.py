@@ -6,7 +6,7 @@ setup(
     name = 'gak',
     packages = find_packages(),
 	scripts=['scripts/gak'],
-    version = '0.1.0',
+    version = '0.1.1',
     description = 'Command-line tool to make local Git repo interaction more efficient',
     author = 'Samuel Longchamps',
     author_email = 'samuel.longchamps@usherbrooke.ca',
