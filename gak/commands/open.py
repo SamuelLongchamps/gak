@@ -51,6 +51,8 @@ class OpenGakCommand(GakCommand):
             print("Opening {}".format(target))
             os.system(runner.format(target))
             return 0
+        else:
+            sys.stderr.write(f"No defined target '{args.what}'\n")
         return 1
 
 
